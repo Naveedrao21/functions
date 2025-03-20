@@ -8,8 +8,13 @@ fn main() {
         x + 3
     };
     println!("The value of y is: {y}");
+
     let c = nine();
     println!("The value of c is: {c}");
+
+    let x = plus_one(5);
+    
+    println!("the value of x is: {x}");
 }
 
 fn another_function(x: u32) {
@@ -20,4 +25,7 @@ fn print_labeled_measurement(value: i32, unit_label: char) {
 }
 fn nine() -> i32 {
     9
+}
+fn plus_one(x: i32) -> i32 {
+    x + 2
 }
